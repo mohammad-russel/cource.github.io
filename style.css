@@ -108,6 +108,7 @@ header {
 .contact h2:hover {
     box-shadow: inset rgb(0, 0, 0) 0px 0px 0px 40px;
     color: white;
+  letter-spacing: 3px;
 }
 
 
@@ -172,6 +173,7 @@ section {
 }
 
 .summery a:hover {
+      letter-spacing: 3px;
     color: cyan;
     text-shadow: cyan 0 0 4px;
     box-shadow: inset rgb(0, 0, 0) 0px 0px 0px 40px;
