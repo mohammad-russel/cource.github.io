@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-design</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <h1>Course<span>.</span></h1>
+                </a>
+            </div>
+            <div class="contact">
+                <h2>contact</h2>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="summery">
+                    <h2><span class="h21">WEB</span>-<span class="h22">DESGIN</span> </h2>
+                    <br>
+                    <p>Hey dude, do you want to learn web design easily? Then you are in the right place. Our teachers specialize in website development, computer engineering, ethical hacking and digital marketing. So, if you want our course with 20% discount,
+                        click on the button.
+                    </p>
+                    <br>
+                    <a href="#">Get started</a>
+                </div>
+
+
+                <div class="visual">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l1EssrLxt7E?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </footer>
+    </div>
+    <div class="maincfblock">
+        <div class="contectform">
+            <span class="cross">+</span>
+            <form action="submit" p>
+                <input class="fill" type="text" name="" id="" placeholder="Your name">
+                <input class="fill" type="email" name="" id="" placeholder="Your email">
+                <textarea name="" id="" cols="40" rows="5" placeholder="Write messege..."></textarea>
+                <input class="sub" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="b bg1"></div>
+    <div class="b bg2"></div>
+    <div class="b bg3"></div>
+    <div class="b bg4"></div>
+    <div class="b bg5"></div>
+
+</body>
+<script>
+    document.querySelector(".contact").onclick = cu;
+
+    function cu() {
+        var v = setTimeout(hide, 00)
+    }
+
+    function hide() {
+        document.querySelector(".maincfblock").style.display = "block";
+    }
+
+    document.querySelector(".cross").onclick = cls;
+
+    function cls() {
+        document.querySelector(".maincfblock").style.display = "none";
+    }
+</script>
+
+</html>

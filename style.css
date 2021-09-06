@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* contaner----------------------------------------------------------------------------------------- */
+
+.container {
+    backdrop-filter: blur(100px);
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.178);
+    box-shadow: rgb(0 0 0) 2px 3px 7px -3px;
+}
+
+
+/* .container::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: hotpink;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.container::after {
+    position: absolute;
+    content: '';
+    top: 1331;
+    left: 231;
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgb(123, 255, 105);
+    z-index: -1;
+    filter: blur(3px);
+} */
+
+
+/* header-------------------------------------------------------------------------- */
+
+header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+/* logo------------------------------- */
+
+.logo a {
+    text-decoration: none;
+    color: rgb(208, 208, 208);
+}
+
+.logo a h1 {
+    letter-spacing: 1px;
+    font-size: 4vmin;
+    font-size: 3vmax;
+}
+
+.logo a h1 span {
+    color: rgb(0, 255, 136);
+    text-shadow: rgb(23, 255, 69) 0px 0px 5px;
+    animation: anime 1s linear infinite;
+}
+
+
+/* contect---------------------------- */
+
+.contact {
+    width: 100px;
+    text-align: center;
+}
+
+.contact h2 {
+    letter-spacing: 1px;
+    font-size: large;
+    color: rgb(202, 202, 202);
+    padding: 1px;
+    box-shadow: inset 0 0px 0px -2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact h2:hover {
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 0px 40px;
+    color: white;
+}
+
+
+/* main---------------------------------------------------------------------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+/* section-------------------------------------------------- */
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+}
+
+
+/* summary-------------------------------- */
+
+.summery {
+    padding: 10px;
+    width: 50%;
+}
+
+.summery h2 {
+    font-size: 6vmax;
+    letter-spacing: 4px;
+    color: rgb(1, 33, 48);
+}
+
+.summery h2 span.h21 {
+    color: rgb(228, 228, 228);
+}
+
+.summery h2 span.h22 {
+    color: #ff58c2;
+}
+
+.summery p {
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.summery a {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    background-color: rgb(198, 247, 255);
+    font-size: 25px;
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: 0.5s;
+    box-shadow: inset black 0px 0px 0px 0px;
+}
+
+.summery a:hover {
+    color: cyan;
+    text-shadow: cyan 0 0 4px;
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 0px 40px;
+}
+
+
+/* visual------------------------------------ */
+
+.visual {
+    padding: 10px;
+    width: 50%;
+    height: 71%;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* footer----------------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+
+/* social--------------------------------------- */
+
+.social {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa {
+    font-size: 22px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+    background-color: rgba(255, 235, 205, 0);
+    transition: 0.5s;
+}
+
+.fa:hover {
+    background-color: black;
+    color: cyan;
+    text-shadow: cyan 0 0 12pc;
+}
+
+.fa-facebook {
+    padding: 6px 8px 5px;
+}
+
+
+/* responsive------------------------------------------------------- */
+
+@media screen and (max-width:665px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        border-radius: 0px;
+    }
+    header {
+        padding: 20px;
+    }
+    .logo a h1 {
+        font-size: 30px;
+    }
+    .contact h2 {
+        font-size: 26px;
+    }
+    main {
+        height: auto;
+    }
+    section {
+        display: grid;
+        align-items: center;
+    }
+    .summery {
+        width: 100%;
+        text-align: center;
+        padding: 40px;
+    }
+    .summery p {
+        font-size: 25px;
+    }
+    .visual {
+        width: 100%;
+        height: 400px;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .social {
+        width: 400px;
+    }
+}
+
+
+/* -------------------other--------------  */
+
+.maincfblock {
+    display: none;
+    position: fixed;
+    transition: 1s;
+}
+
+.contectform {
+    background-color: rgb(68, 68, 68);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: bisque;
+    padding: 0px 12px;
+    border-radius: 50%;
+    transform: rotate( 45deg);
+    font-size: 39px;
+    cursor: pointer;
+}
+
+form {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.fill {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+textarea {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 3px;
+}
+
+.sub {
+    width: 50%;
+    border: none;
+    margin: auto;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 1px 1px 3px 0px;
+    border-radius: 7px;
+}
+
+.sub:active {
+    box-shadow: none;
+}
+
+.b {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+}
+
+.bg1 {
+    top: 20pc;
+    left: 60pc;
+    background-color: rgba(255, 64, 64, 0.898);
+}
+
+.bg2 {
+    top: -5pc;
+    left: 56pc;
+    background-color: rgba(81, 255, 119, 0.802);
+}
+
+.bg3 {
+    top: 11pc;
+    left: 18pc;
+    background-color: rgba(255, 87, 213, 0.796);
+}
+
+.bg4 {
+    top: 23pc;
+    left: 0pc;
+    background-color: rgba(122, 255, 248, 0.761);
+}
+
+.bg5 {
+    top: 1pc;
+    left: 7pc;
+    background-color: rgba(251, 253, 96, 0.74);
+}
+
+
+/* -------------------------------------- animation -------------------------------------- */
+
+@keyframes anime {
+    0% {
+        color: aqua;
+    }
+    50% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: aqua;
+    }
+}
